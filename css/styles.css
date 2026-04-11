@@ -378,8 +378,8 @@ p {
 .project-item {
   --number: 3;
 }
-.project-item:hover,
-.project-item:focus {
+.project-cart:hover,
+.project-cart:focus {
   box-shadow:
     1px 4px 6px 0px #00000029,
     0px 4px 4px 0px #0000000f,
