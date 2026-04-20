@@ -11,6 +11,9 @@
   --number: 1;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: var(--main-font);
   color: var(--main-color-text);
@@ -66,6 +69,7 @@ p {
   display: flex;
   flex-wrap: wrap;
   gap: var(--indent);
+  align-items: flex-start;
 }
 .grid-item {
   flex-basis: calc(
@@ -142,7 +146,9 @@ p {
 .header-link:focus {
   color: var(--active-color);
 }
-
+.current {
+  color: var(--active-color);
+}
 .list-contacts {
   display: flex;
   align-items: center;
@@ -226,12 +232,21 @@ p {
 .features-item:last-child {
   margin-right: 0;
 }
-
+.features-icon {
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--secondary-background-color);
+  margin-bottom: var(--indent);
+  border-radius: 4px;
+}
 .features-title {
   font-weight: 700;
+  line-height: 1.14;
   text-transform: uppercase;
   color: var(--main-color-title);
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .features-text {
