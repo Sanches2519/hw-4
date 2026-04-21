@@ -9,6 +9,8 @@
   --project-border-color: #eeeeee;
   --indent: 30px;
   --number: 1;
+  --fill-icons: #afb1b8;
+  --fill-active-icons: #ffffff;
 }
 
 html {
@@ -289,8 +291,39 @@ p {
 .team-text {
   font-size: 16px;
   text-align: center;
+  margin-bottom: 16px;
 }
-
+.social-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social-item:not(:last-child) {
+  margin-right: 10px;
+}
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--active-color);
+}
+.social-icon {
+  fill: var(--fill-icons);
+}
+.social-icon:hover,
+.social-icon:focus {
+  fill: var(--fill-active-icons);
+}
+.social-link:hover .social-icon,
+.social-link:focus .social-icon {
+  fill: var(--fill-active-icons);
+}
 /*===============================footer=========================*/
 .footer {
   background-color: var(--main-background-color);
