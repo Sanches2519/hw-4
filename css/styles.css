@@ -59,14 +59,11 @@ p {
 .section {
   padding-top: 94px;
 }
-
-.section:nth-child(3n) {
+.section:nth-of-type(n + 3) {
+  padding-top: 94px;
   padding-bottom: 94px;
 }
 
-.section:last-child {
-  padding-bottom: 94px;
-}
 .grid {
   display: flex;
   flex-wrap: wrap;
@@ -89,7 +86,7 @@ p {
   font-size: 36px;
   text-align: center;
   color: var(--main-color-title);
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .img {
@@ -326,6 +323,30 @@ p {
 .social-link:hover .social-icon,
 .social-link:focus .social-icon {
   fill: var(--fill-active-icons);
+}
+/*===============================client=========================*/
+.client-item {
+  --number: 6;
+}
+.client-link {
+  width: 170px;
+  height: 92px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--fill-icons);
+  border-radius: 4px;
+}
+.client-link:hover,
+.client-link:focus {
+  border: 1px solid var(--active-color);
+}
+.client-icon {
+  fill: var(--fill-icons);
+}
+.client-link:hover .client-icon,
+.client-link:focus .client-icon {
+  fill: var(--active-color);
 }
 /*===============================footer=========================*/
 .footer {
